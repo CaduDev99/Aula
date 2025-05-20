@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #005a8d;
+            color: #fff;
+            margin: 0;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        div.empresa {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        div.empresa img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #005a8d;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            color: #0077b6;
+            margin: 5px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Empresas que atuam com APH</h1>
+
+    <section>
+        <div class="empresa">
+            <div><img src="" alt="Logo BRvida"></div>
+            <div>
+                <h2>BRvida</h2>
+                <p>Capacitação e Atuação em APH e Resgate</p>
+                <h2>Contato:</h2>
+                <ul>
+                    <li>Tel: (35) 3422-4001</li>
+                    <li>Site: <a href="https://brvidaaph.com.br/">https://brvidaaph.com.br/</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/brvida.aph/">@brvida.aph</a></li>
+                </ul>
+                <h2>Atuando em:</h2>
+                <h3>Arteris Fernão Dias</h3>
+                <p>Tel: 0800 283 0381</p>
+            </div>
+        </div>
+
+        <div class="empresa">
+            <h2>São Fransisco Resgate - Grupo Elo</h2>
+            <p>Atendimento Pré-hospitalar 🛣️ Rodoviário | 🌆 Urbano | ✈️ Aeroportuário</p>
+            <h2>Contato:</h2>
+            <ul>
+                <li>Email comercial: comercial@elo-ci.com.br</li>
+            </ul>
+
+            <h2>Atuando em:</h2>
+            <div>
+                <h3>EPR Sul de Minas</h3>
+                <p>Tel: 0800 290 0459</p>
+            </div>
+            <div>
+                <h3>EPR Vias do Café</h3>
+                <p>Tel: 0800 265 0491</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
