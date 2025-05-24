@@ -59,6 +59,13 @@ header{
     transition: all ease-in-out 0.3s;
 }
 
+.img-engasgo {
+    max-width: 800000px;
+    width: 100%;
+    height: auto;
+}
+
+
 .img:hover {
     transform: scale(1.05);
     transition-duration: 0.3s;
