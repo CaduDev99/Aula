@@ -217,6 +217,11 @@ footer p{
     }
 }
 
+.cards-container a.card {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media (max-width: 480px) {
     .nav-list {
         font-size: 16px;
