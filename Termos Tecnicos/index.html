@@ -8,28 +8,57 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #15202F;
       margin: 0;
       padding: 20px;
-      color: #333;
+      color: #ffffff;
     }
 
     header {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+    }
+
+    main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    main > div {
+      max-width: 600px;
+      width: 100%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     h1 {
       font-size: 2em;
-      margin-bottom: 10px;
-      color: #005b96;
+      margin-bottom: 5px;
+      color: #00e1ff;
+      text-shadow: 0px 0px 10px rgb(0, 234, 255);
+    }
+
+    div h2{
+      color: rgb(0, 255, 0);
+      text-shadow: 0px 0px 10px rgb(0, 255, 0);
+    }
+
+    .destaque{
+      color: yellow;
+      text-shadow: 0px 0px 10px yellow;
+      font-weight: bold;
     }
 
     a.voltar {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
       text-decoration: none;
       background-color: #005b96;
       color: white;
@@ -37,10 +66,17 @@
       border-radius: 8px;
       font-weight: bold;
       transition: background-color 0.3s ease;
+      width: 300px;
     }
 
     a.voltar:hover {
       background-color: #004372;
+    }
+
+    .btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     ol {
@@ -50,12 +86,6 @@
 
     li {
       margin-bottom: 20px;
-    }
-
-    h2 {
-      font-size: 1.5em;
-      color: #004372;
-      margin-top: 30px;
     }
 
     ul {
@@ -86,100 +116,93 @@
         font-size: 0.9em;
       }
     }
+
+    .hr1{
+        border: 1px solid rgb(0, 247, 231);
+        box-shadow: 0px 0px 10px rgb(0, 247, 231);
+        width: 100%;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Termos Técnicos mais Utilizados</h1>
-    <a href="../index.html" class="voltar">← Voltar à Página Inicial</a>
   </header>
 
-  <ol>
-    <li>
-      <h2>Termos Gerais no APH e Emergência</h2>
-      <ul>
-        <li>Anamnese: Coleta rápida de histórico médico e sintomas para guiar o atendimento.</li>
-        <li>Triage: Classificação de prioridade do paciente com base na gravidade (ex.: Manchester).</li>
-        <li>PCR (Parada Cardiorrespiratória): Cessação da respiração e/ou batimentos cardíacos.</li>
-        <li>Choque: Falência circulatória aguda, como choque hipovolêmico, séptico ou cardiogênico.</li>
-        <li>Estado de choque: Condição com perfusão inadequada de órgãos vitais.</li>
-      </ul>
-    </li>
+  <main>
 
-    <li>
-      <h2>Sinais e Sintomas Comuns</h2>
-      <ul>
-        <li>Dispneia: Dificuldade respiratória ou falta de ar.</li>
-        <li>Cianose: Coloração azulada da pele por baixa oxigenação.</li>
-        <li>Taquicardia: Frequência cardíaca acima de 100 bpm.</li>
-        <li>Bradicardia: Frequência cardíaca abaixo de 60 bpm.</li>
-        <li>Febre (pirexia): Elevação da temperatura corporal.</li>
-        <li>Hipotensão: Pressão arterial baixa (ex.: &lt;90/60 mmHg).</li>
-        <li>Hipertensão: Pressão arterial elevada (ex.: &gt;140/90 mmHg).</li>
-        <li>Alteração do nível de consciência: Avaliada pela Escala de Coma de Glasgow (ECG).</li>
-      </ul>
-    </li>
+    <div>
+      <h2>Trauma</h2>
+      <p>É um termo utilizado para identificar uma lesão caracterizada por alteração estrutural ou fisiológica, resultante da ação de um agente externo que ocasionou a exposição a um tipo de energia (mecânica, térmica, elétrica). Essa energia pode ter origens biológicas, fisiológicas ou químicas.</p>
 
-    <li>
-      <h2>Exames e Avaliações Rápidas</h2>
-      <ul>
-        <li>Oximetria de pulso: Medição da saturação de oxigênio no sangue.</li>
-        <li>Eletrocardiograma (ECG): Registro da atividade elétrica do coração, essencial para infarto ou arritmias.</li>
-        <li>Glicemia capilar: Medição rápida do nível de glicose no sangue.</li>
-        <li>Escala de Coma de Glasgow (ECG): Avaliação neurológica (olhos, verbal, motor).</li>
-        <li>Pupilas: Avaliação de tamanho, simetria e reatividade à luz (ex.: midríase, miose).</li>
-      </ul>
-    </li>
+      <h2>Clinico</h2>
+      <p>São problemas de saúde de natureza não traumática, mas sim relacionados a doenças ou condições médicas, como infecções, problemas cardíacos, diabetes, entre outros. </p>
+    </div>
 
-    <li>
-      <h2>Condições Frequentes</h2>
-      <ul>
-        <li>Infarto Agudo do Miocárdio (IAM): Morte de tecido cardíaco por obstrução arterial.</li>
-        <li>Acidente Vascular Cerebral (AVC): Interrupção do fluxo sanguíneo cerebral (isquêmico ou hemorrágico).</li>
-        <li>Trauma: Lesões por acidentes, como fraturas, contusões ou hemorragias.</li>
-        <li>Edema Agudo de Pulmão (EAP): Acúmulo de líquido nos alvéolos, geralmente por insuficiência cardíaca.</li>
-        <li>Crise convulsiva: Atividade elétrica cerebral anormal, com ou sem movimentos.</li>
-        <li>Hipoglicemia: Baixo nível de glicose no sangue, comum em diabéticos.</li>
-        <li>Sepse: Infecção generalizada com resposta inflamatória grave.</li>
-      </ul>
-    </li>
+    <hr class="hr1">
 
-    <li>
-      <h2>Procedimentos e Intervenções</h2>
+    <p>Os termos técnicos <span class="destaque">"hipo"</span> e <span class="destaque">"hiper"</span> são prefixos que indicam diminuição e aumento, respectivamente, em diversos contextos, incluindo medicina, biologia, química e outras áreas</p>
+    <div>
+      <h2>Hipo</h2>
+      <p>Indica diminuição, escassez, ou posição abaixo. </p>
       <ul>
-        <li>RCP (Reanimação Cardiopulmonar): Compressões torácicas e ventilação para restaurar circulação e respiração.</li>
-        <li>Desfibrilação: Uso de choque elétrico para reverter arritmias graves (ex.: fibrilação ventricular).</li>
-        <li>Intubação orotraqueal: Inserção de tubo para garantir via aérea em pacientes com insuficiência respiratória.</li>
-        <li>Acesso venoso: Inserção de cateter para administração de fluidos ou medicamentos.</li>
-        <li>Ventilação mecânica: Suporte respiratório com ventilador em casos graves.</li>
-        <li>Controle de hemorragia: Uso de torniquetes, compressas ou suturas em traumas.</li>
-        <li>Imobilização: Uso de colar cervical, prancha rígida ou talas em traumas.</li>
+        <li><b>Hipotensão</b>: Pressão arterial baixa.</li>
+        <li><b>Hipoglicemia</b>: Baixo nível de glicose no sangue.</li>
+        <li><b>Hipotiroidismo</b>: Diminuição do funcionamento da glândula tireoide.</li>
+        <li><b>Hipocalcemia</b>: Baixo nível de cálcio no sangue.</li>
+        <li><b>Hipocloridria</b>: Redução do ácido clorídrico no estômago.</li>
+        <li><b>Hipóxia</b>: Diminuição da concentração de oxigénio nas células.</li>
+        <li><b>Hipovolemia</b>: Baixo volume de Liquidos no corpo. (Sangue, agua, etc)</li>
       </ul>
-    </li>
 
-    <li>
-      <h2>Medicamentos Comuns</h2>
+      <h2>Hiper</h2>
+      <p>Indica aumento, excesso, ou posição acima.</p>
       <ul>
-        <li>Adrenalina: Usada em PCR, anafilaxia ou choque grave.</li>
-        <li>Nitroglicerina: Para alívio de dor torácica em angina ou IAM.</li>
-        <li>Oxigênio suplementar: Administrado em casos de hipóxia.</li>
-        <li>Salbutamol: Broncodilatador para crises asmáticas ou DPOC.</li>
-        <li>Aspirina (AAS): Antiplaquetário usado em suspeita de IAM.</li>
-        <li>Glicose hipertônica: Para correção de hipoglicemia grave.</li>
-        <li>Midazolam: Sedativo usado em convulsões ou agitação.</li>
+        <li><b>Hipertensão</b>: Pressão arterial alta.</li>
+        <li><b>Hiperglicemia</b>: Alto nível de glicose no sangue.</li>
+        <li><b>Hipercalcemia</b>: Alto nível de cálcio no sangue.</li>
+        <li><b>Hipertrofia</b>: Aumento do tamanho das células ou órgãos.</li>
+        <li><b>Hipertermia</b>: Temperatura corporal acima do normal.</li>
+        <li><b>Hipertensão</b> intracraniana: Aumento da pressão dentro do crânio.</li>
+        <li><b>Hipervolemia</b> Sobrecarga de fluidos, é uma condição médica em que há um volume excessivo de líquidos no corpo, principalmente no sangue e nos tecidos.</li>
       </ul>
-    </li>
+    </div>
 
-    <li>
-      <h2>Termos Específicos do APH</h2>
+    <div>
+      <h2>Alguns Termos mais Comuns no dia a dia:</h2>
       <ul>
-        <li>SAMU (Serviço de Atendimento Móvel de Urgência): Sistema de atendimento pré-hospitalar.</li>
-        <li>APGAR: Escala para avaliar recém-nascidos (frequência cardíaca, respiração, etc.).</li>
-        <li>Tempo porta-balão: Intervalo entre chegada ao hospital e desobstrução de artéria em IAM.</li>
-        <li>Protocolo de trauma: Sequência padronizada para avaliar e tratar vítimas de trauma (ex.: ATLS).</li>
-        <li>Via aérea difícil: Situação em que a intubação ou ventilação é desafiadora.</li>
+        <li><b>Afagia</b>: Dificuldade para engolir.</li>
+        <li><b>Cefaleia</b>: Dor de cabeça.</li>
+        <li><b>Diurese</b>: Produção e excreção de urina.</li>
+        <li><b>Edema</b>: Inchaço causado pelo acúmulo de líquido nos tecidos.</li>
+        <li><b>Hematoma</b>: Acúmulo de sangue sob a pele.</li>
+        <li><b>Intravenoso</b>: Administração de medicamentos ou fluidos diretamente na corrente sanguínea.</li>
+        <li><b>Necrose</b>: Morte de tecido.</li>
+        <li><b>Prurido</b>: Coceira.</li>
+        <li><b>Sutura</b>: Costura de uma ferida.</li>
+        <li><b>Taquipneia</b>: Aumento da frequência respiratória.</li>
+        <li><b>Bradipneia</b>: Diminuição da frequencia Respiratória.</li>
+        <li><b>Taquicardia</b>: Aumento da Frequencia Cardiaca.</li>
+        <li><b>Bradicardia</b>: Diminuiçãoda frequencia cardiaca.</li>
+        <li><b>Algia</b>: Dor</li>
+        <li><b>Nausea</b>: Enjoo ou Vomito.</li>
+        <li><b>Sudorese</b>: Suor</li>
+        <li><b>Cianose</b>: Palidez</li>
+        <li><b>Vertigem</b>: Tontura</li>
+        <li><b>Letargia</b>: Sonolência</li>
+        <li><b>Pneumotorax</b>: Presença de ar na cavidade toraxica.</li>
+        <li><b>HemoTorax</b>: Presença de sangue na cavidade toraxica.</li>
+        <li><b>Escoriações</b>: Ferimentos leves</li>
+        <li><b>FCC</b>: Ferimento Corto-Contuso (Corte profundo).</li>
+        <li></li>
+        <li></li>
       </ul>
-    </li>
-  </ol>
+    </div>
+
+    
+  </main>
+
+  <div class="btn"><a href="../index.html" class="voltar">Voltar à Página Inicial</a></div>
+
 </body>
 </html>
