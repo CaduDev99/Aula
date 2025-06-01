@@ -28,7 +28,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 900px;
+      max-width: 1200px;
       width: 100%;
       gap: 30px;
     }
@@ -42,8 +42,15 @@
       text-align: center;
     }
 
-    .instrutor-container {
+    .instrutores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
       width: 100%;
+    }
+
+    .instrutor-container {
       background-color: #0d1b2a;
       border: 2px solid #00ffff;
       border-radius: 15px;
@@ -52,6 +59,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      flex: 1 1 400px;
+      max-width: 450px;
     }
 
     .instrutor-img {
@@ -210,71 +219,69 @@
   <div class="wrapper">
     <h1>Instrutores</h1>
 
-    <section class="instrutor-container">
-      <div class="instrutor-img">
-        <img src="../assets/Cadu.png" alt="Foto do instrutor Carlos Eduardo (Cadu)">
-      </div>
-      <div class="instrutor-info">
-        <p><strong>Nome:</strong> Carlos Eduardo (Cadu)</p>
-        <p><strong>Idade:</strong> 25 anos</p>
-
-        <p class="section-title">Formação:</p>
-        <ul class="formacao">
-          <li>226 horas - APH/BLS (Suporte Básico de Vida)</li>
-          <li>24 horas - APH/ALS (Suporte Avançado de Vida)</li>
-          <li>20 horas - APH/March 1 (Atendimento a feridos em Ambientes de Combate)</li>
-          <li>Método START - São Francisco Resgate / Caldas MG</li>
-          <li>Busca e Resgate em Ambientes Remotos e Hostis - Emergency Fire / Cajuru SP</li>
-          <li>Resgate em Ribanceira - São Francisco Resgate / Caldas MG</li>
-          <li>Resgate com Produtos Perigosos - São Francisco Resgate / Caldas MG</li>
-          <li>Resgate em Altura - São Francisco Resgate / Caldas MG</li>
-          <li>Combate a Princípios de Incêndio - São Francisco Resgate / Caldas MG</li>
-          <li>Desencarceramento Leve - São Francisco Resgate / Caldas MG</li>
-        </ul>
-
-        <p class="section-title">Experiência:</p>
-        <div class="experiencia">
-          <p>2 anos com Resgate Rodoviário</p>
-          <ul class="experiencia">
-            <li>Arteris Fernão Dias (BR381)</li>
-            <li>EPR Sul de Minas (BR459, MG173, MG290)</li>
+    <div class="instrutores">
+      <section class="instrutor-container">
+        <div class="instrutor-img">
+          <img src="../assets/Cadu.png" alt="Foto do instrutor Carlos Eduardo (Cadu)">
+        </div>
+        <div class="instrutor-info">
+          <p><strong>Nome:</strong> Carlos Eduardo (Cadu)</p>
+          <p><strong>Idade:</strong> 25 anos</p>
+          <p class="section-title">Formação:</p>
+          <ul class="formacao">
+            <li>226 horas - APH/BLS (Suporte Básico de Vida)</li>
+            <li>24 horas - APH/ALS (Suporte Avançado de Vida)</li>
+            <li>20 horas - APH/March 1 (Atendimento a feridos em Ambientes de Combate)</li>
+            <li>Método START - São Francisco Resgate / Caldas MG</li>
+            <li>Busca e Resgate em Ambientes Remotos e Hostis - Emergency Fire / Cajuru SP</li>
+            <li>Resgate em Ribanceira - São Francisco Resgate / Caldas MG</li>
+            <li>Resgate com Produtos Perigosos - São Francisco Resgate / Caldas MG</li>
+            <li>Resgate em Altura - São Francisco Resgate / Caldas MG</li>
+            <li>Combate a Princípios de Incêndio - São Francisco Resgate / Caldas MG</li>
+            <li>Desencarceramento Leve - São Francisco Resgate / Caldas MG</li>
           </ul>
+          <p class="section-title">Experiência:</p>
+          <div class="experiencia">
+            <p>2 anos com Resgate Rodoviário</p>
+            <ul class="experiencia">
+              <li>Arteris Fernão Dias (BR381)</li>
+              <li>EPR Sul de Minas (BR459, MG173, MG290)</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="btn">
-        <div class="button-container">
-          <a href="https://www.instagram.com/resgate.cadu" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <div class="btn">
+          <div class="button-container">
+            <a href="https://www.instagram.com/resgate.cadu" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="instrutor-container">
-      <div class="instrutor-img">
-        <img src="../assets/tiago.jpg" alt="Foto do instrutor Tiago Renan">
-      </div>
-      <div class="instrutor-info">
-        <p><strong>Nome:</strong> Tiago Renan</p>
-        <p><strong>Idade:</strong> 35 anos</p>
-
-        <p class="section-title">Formação:</p>
-        <ul class="formacao">
-          <li>240 horas - APH/BLS (Suporte Básico de Vida)</li>
-        </ul>
-
-        <p class="section-title">Experiência:</p>
-        <div class="experiencia">
-          <p>3 anos com Resgate Rodoviário</p>
-          <ul class="experiencia">
-            <li>Arteris Fernão Dias (BR381)</li>
+      <section class="instrutor-container">
+        <div class="instrutor-img">
+          <img src="../assets/tiago.jpg" alt="Foto do instrutor Tiago Renan">
+        </div>
+        <div class="instrutor-info">
+          <p><strong>Nome:</strong> Tiago Renan</p>
+          <p><strong>Idade:</strong> 35 anos</p>
+          <p class="section-title">Formação:</p>
+          <ul class="formacao">
+            <li>240 horas - APH/BLS (Suporte Básico de Vida)</li>
           </ul>
+          <p class="section-title">Experiência:</p>
+          <div class="experiencia">
+            <p>3 anos com Resgate Rodoviário</p>
+            <ul class="experiencia">
+              <li>Arteris Fernão Dias (BR381)</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="btn">
-        <div class="button-container">
-          <a href="https://www.instagram.com/tiagor.mariano/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <div class="btn">
+          <div class="button-container">
+            <a href="https://www.instagram.com/tiagor.mariano/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <div class="btn">
       <div class="button-container1">
