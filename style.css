@@ -8,7 +8,7 @@
 
 body{
     min-height: 100vh;
-    background-color: #15202F;
+    background-color: #010105;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -129,7 +129,7 @@ header{
 }
 
 .card {
-    background-color: #0d1b2a;
+    background-color: #010105;
     border: 2px solid #00ffff;
     border-radius: 10px;
     text-align: center;
