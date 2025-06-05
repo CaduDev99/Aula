@@ -12,6 +12,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
     line-height: 1.6;
+    text-indent: 30px;
 }
 
 header {
@@ -22,22 +23,29 @@ header {
 h1 {
     color: #00ddff;
     text-shadow: 0 0 15px #00ddff;
+    text-indent: 0;
 }
 
 h2 {
     color: #44ff00;
     text-shadow: 0 0 15px #00ff22;
+    text-indent: 0;
 }
 
 h3 {
     color: #ffa200;
     text-shadow: 0 0 15px #ffa200;
+    text-indent: 0;
 }
 
-p, li {
+p{
     font-size: 1rem;
 }
 
+li{
+    font-size: 1rem;
+    text-indent: 0;
+}
 main {
     width: 100%;
     max-width: 900px;
