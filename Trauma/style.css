@@ -108,6 +108,14 @@ hr{
     margin: 5px 0;
 }
 
+.avaliacao-secundaria {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+
         .voltar-inicio {
             display: flex;
             justify-content: center;
