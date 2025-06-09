@@ -200,18 +200,19 @@ b {
     width: 100%;
 }
 
-.btn-voltar-novo {
+a {
     background-color: #00fff7;
     color: #15202F;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1rem;
-    padding: 0.75rem 2.5rem;
+    padding: 10px 30px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 0 10px #00fff7;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
 
     display: flex;
     justify-content: center;
@@ -220,7 +221,7 @@ b {
     user-select: none;
 }
 
-.btn-voltar-novo:hover {
+a:hover {
     background-color: #00e0d1;
     box-shadow: 0 0 15px #00fff7;
     color: white;
