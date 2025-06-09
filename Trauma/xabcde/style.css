@@ -226,31 +226,38 @@ b {
     color: white;
 }
 
-ul li.anisocoria {
-    background-image: url('assets/');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px; /* espaço para a imagem */
+ul li.anisocoria::after {
+    content: url('imagens/anisocoria.png');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
-ul li.miose {
-    background-image: url('imagens/miose.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
+ul li.miose::after {
+    content: url('imagens/miose.png');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
-ul li.midriase {
-    background-image: url('imagens/midriase.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
+ul li.midriase::after {
+    content: url('imagens/midriase.png');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
-ul li.nao-reativa {
-    background-image: url('imagens/nao-reativa.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
+ul li.nao-reativa::after {
+    content: url('imagens/nao-reativa.png');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
 }
-
