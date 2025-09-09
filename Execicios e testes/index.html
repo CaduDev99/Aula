@@ -222,8 +222,8 @@
         </div>
         <div id="result"></div>
         <div class="voltar-inicio">
-            <a href="index.html" id="main-page" class="btn-voltar" style="display: none;">Voltar à Página Principal</a>
-            <a href="#" id="restart" class="btn-restart" style="display: none;">Reiniciar Quiz</a>
+            <a href="../index.html" id="main-page" class="btn-voltar" style="display: none;">Voltar</a>
+            <a href="#" id="restart" class="btn-restart" style="display: none;">Reiniciar Teste</a>
         </div>
     </main>
     <footer>
@@ -233,14 +233,13 @@
         document.addEventListener('DOMContentLoaded', function() {
             const questions = [
                 {
-                    question: "Qual é a sequência correta do BLS em adultos?",
+                    question: "Na cena se encontram 2 vitimas: Vitima 1: com Hemorragia Exsanguinante, Vitima 2: Em PCR, qual você atende Primeiro?",
                     options: [
-                        "Circulação → Respiração → Vias Aéreas → Desfibrilação",
-                        "Vias Aéreas → Respiração → Circulação",
-                        "Respiração → Circulação → Vias Aéreas",
-                        "Desfibrilação → Circulação → Respiração"
+                        "Vitima 1",
+                        "Vitima 2",
+                    
                     ],
-                    correct: 1
+                    correct: 0
                 },
                 {
                     question: "Em uma vítima inconsciente, qual é o primeiro passo?",
@@ -436,7 +435,7 @@
                     question: "Qual é a técnica recomendada para desobstrução de vias aéreas em adultos conscientes?",
                     options: [
                         "Manobra de Heimlich",
-                        "RCP com compressões torácicas",
+                        "Compressões torácicas",
                         "Tapotagem nas costas",
                         "Ventilação boca-a-boca"
                     ],
@@ -462,6 +461,50 @@
                     ],
                     correct: 2
                 }
+
+                {
+                    question: "Paciente vitima de uma queda de moto,conciente, aprensenta falas desconexas, responde a estimulo doloroso, qual o Glasgow desse paciente?",
+                    options: [
+                        "Glasgow 13",
+                        "Glasgow 9",
+                        "Glasgow 12",
+                        "Glasgow 10"
+                    ],
+                    correct: 2
+                },
+
+                {
+                    question: "Qual o metodo usado na avaliação secundaria no APH?",
+                    options: [
+                        "SAMPLA",
+                        "XABCDE",
+                        "ATLS",
+                        "START"
+                    ],
+                    correct: 0
+                },
+
+                {
+                    question: "oque fazer em caso de gestantante com OVACE parcial?",
+                    options: [
+                        "Manobra de Heinlich",
+                        "Golpes Dorsais",
+                        "Compressões Toraxicas",
+                        "Incentivar a Tosse"
+                    ],
+                    correct: 3
+                },
+
+                {
+                    question: "Vitima de atropelamento com Torax instavel, Dificuldade respiratória, Saturação caindo, frequencia respiratória caindo, sudoreico, taquicardico, com perfusão periferica bilateral ausente, oque esse paciente pode ter?  ",
+                    options: [
+                        "Pneumotorax",
+                        "TCE",
+                        "Hemotorax",
+                        "Hipoglicemia"
+                    ],
+                    correct: 3
+                },
             ];
 
             let currentQuestionIndex = 0;
