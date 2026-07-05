@@ -281,3 +281,67 @@ ul li.nao-reativa::after {
     margin-left: 10px;
     vertical-align: middle;
 }
+
+/* --- AJUSTES DE RESPONSIVIDADE --- */
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        text-indent: 0; /* Remove o recuo grande em telas pequenas */
+    }
+
+    p {
+        text-align: left;
+        margin-bottom: 15px;
+        text-indent: 15px; /* Recuo menor para celular */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    section, .X, .A, .B, .C, .D, .E {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    /* Ajusta os itens que têm imagem e texto */
+    li.image-item {
+        flex-direction: column; /* Empilha o texto e a imagem verticalmente */
+        align-items: center;
+        text-align: left;
+    }
+
+    li.image-item img {
+        width: 100%; /* Imagem ocupa a largura total disponível */
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Ajuste específico para as imagens das pupilas (Letra D) */
+    section.D img {
+        display: block;
+        width: 100% !important;
+        height: auto !important;
+        margin: 10px 0 !important;
+    }
+
+    /* Ajuste dos botões para facilitar o clique com o polegar */
+    .next-button, .btn-voltar, a {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+        justify-content: center;
+    }
+}
+
+/* Ajuste para telas muito pequenas (iPhone SE, etc) */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+}
